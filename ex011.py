@@ -4,4 +4,4 @@ area = lar * alt
 
 quantreal = area / 2
 
-print('Serao necessarios {:.2f} litros de tinta'.format(quantreal))
+print('Com a área de {:.2f} metros quadrados, serão necessarios {:.2f} litros de tinta'.format(area, quantreal))
