@@ -4,4 +4,4 @@ dollar = 3.27
 
 total = v1 / dollar
 
-print('Você possui ${:.2f} dolares!!'.format(total))
+print('Com R${:.2f} reais, você pode comprar ${:.2f} dolares!!'.format(v1, total))
