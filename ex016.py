@@ -11,3 +11,5 @@ from math import trunc
 n1 = float(input('Digit um valor com casas decimáis: '))
 inteiro = trunc(n1)
 print('O valor {} truncado fica {}'.format(n1, inteiro))
+#print('O valor inteiro é {:.0f}'.format(n1))
+#print('O valor inteiro é {}'.format(int(n1))
