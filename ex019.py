@@ -1,3 +1,6 @@
+#ex019
+#Um Prof. quer sortear um dos seus quartro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo onnome do escolhido.
+
 import random
 n1 = random.randint(0,3)
 #Ou pode resolver assim
@@ -20,4 +23,11 @@ if n1 == 3:
 #print(alunos[n1])
 print(n1)
 
-
+#Resolucao do Prof.
+# n1 = str(input('Primeiro Aluno: '))
+# n2 = str(input('Segundo Aluno: '))
+# n3 = str(input('Terceiro Aluno: '))
+# n4 = str(input('Quarto aluno: '))
+# lista = [n1, n2, n3, n4]
+# escolhido = random.choice(lista)
+# print('O aluno escolhido foi {}.' .format(escolhido))
