@@ -3,3 +3,7 @@
 #ex:Ana Maria de Souza
 #primeiro = Ana
 #ultimo = Souza
+name = str(input('Digite um nome completo de uma pessoa: '))
+check1 = name.split()
+print('Primeiro nome: {}'.format(check1[0]))
+print('O ultimo nome: {}'.format(check1[-1]))
