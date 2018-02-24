@@ -6,5 +6,4 @@ nome = str(input('Digite o nome completo de uma pessoa: '))
 #Esse nao trata se existe diferenca de upper ou lowercase
 print('Existe o nome silva no caractere {}'.format(nome.find('Silva')))
 # checagem = 'Silva' in nome
-n1 = nome.upper()
-print('Existe Silva no nome? ', 'SILVA' in n1)
+print('Existe Silva no nome? ', 'SILVA' in nome.upper())
