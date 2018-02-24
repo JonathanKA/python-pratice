@@ -7,9 +7,22 @@
 #centena: 8
 #milhar: 1
 
-numero = input('Digite um numero inteiro de 0 a 9999: ')
+#Resolucao usando matematica
+num = int(input('Digite um numero inteiro de 0 a 9999: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print('Analisando o numero {}'.format(num))
+print('Milhar: {}'.format(m))
+print('Centena: {}'.format(c))
+print('Dezena: {}'.format(d))
+print('Unidade: {}'.format(u))
 
-print('Milhar: {}'.format(numero[0]))
-print('Centena: {}'.format(numero[1]))
-print('Dezena: {}'.format(numero[2]))
-print('Unidade: {}'.format(numero[3]))
+#Resolucao com string
+valor = str(num).zfill(4)
+print('O numero inteiro é: ',valor)
+print('Milhar: {}'.format(valor[0]))
+print('Centena: {}'.format(valor[1]))
+print('Dezena: {}'.format(valor[2]))
+print('Unidade: {}'.format(valor[3]))
