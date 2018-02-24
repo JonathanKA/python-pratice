@@ -5,19 +5,18 @@
 #-Quantas letras ao todo(sem considerar espacos)
 #-Quantas letras tem o primeiro nome
 
-name = str(input('Digite um nome completo: '))
+name = str(input('Digite um nome completo: ')).strip()
 
-print(name.upper())
-print(name.lower())
-print(len(name.replace(' ','')))
+print('Analisando o eu nome...')
+print('O seu nome em maiusculas e {}'.format(name.upper()) )
+print('O seu nome em minusculas e {}'.format(name.lower()))
+
+#Forma que eu utilizei para resolver
+print('Seu nome tem ao todo {} letras'.format(len(name.replace(' ',''))) )
+#Rsolução do exercicio
+print('O seu nome tem {} letras'.format(len(name) - name.count(' ')))
+
 name1 = name.split()
-print(len(name1[0]))
-
-
-# frase = 'Curso em Video Python'
-# print('Curso' in frase)
-# print(frase.find('Video'))
-#
-# dividido = frase.split()
-# print(dividido)
-# print(dividido[2][3])
+print('O seu primeiro nome possui {} letras'.format(len(name1[0])) )
+#Rsolução do exercicio, ele encontra o index do primeiro espaco da frase
+print('O seu primeiro nome tem {} letras'.format(name.find(' ')))
