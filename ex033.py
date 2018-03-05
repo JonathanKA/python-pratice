@@ -24,3 +24,4 @@ if c > a and c > b:
 print('===' * 10)
 print('maior é ', maior)
 print('menor é ', menor)
+
